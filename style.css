@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
+@font-face {
+  font-family: Modern;
+  src: url(Fonts/Alien-Encounters-Bold-Italic.ttf);
+}
+@font-face {
+  font-family: Hacking;
+  src: url(Fonts/Pokemon\ Classic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 3vh;
+  width: auto;
+  margin: 4rem;
+  text-align: center;
+  font-family: Modern;
+  letter-spacing: 20px;
+}
+.text p {
+  font-size: 7.6vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 1.15vw; */
+  /* width: 40vw; */
+  height: 30vh;
+  margin: 50px 50vh;
+  padding: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(30px);
+  /* line-height: 20px; */
+}
+.userbox {
+  display: visible;
+  text-align: center;
+}
+input {
+  padding-left: 12px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(24, 23, 23);
+  height: 5.9vh;
+  width: 18vw;
+  margin: 10px 0px;
+  color: rgba(255, 255, 255, 0.5);
+  accent-color: #0a7c2b;
+  letter-spacing: 2px;
+}
+input:hover {
+  border: 1.4px solid #0a7c2b;
+}
+input:focus {
+  border: 1.5px solid #0a7c2b;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+.nav {
+  margin: 10px;
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  transform: translateY(10px);
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.nav a {
+  padding: 0.5em 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3e8914;
+  border-right: 3px solid #2e640f;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2e640f;
+  border-left: 3px solid #3e8914;
+  transform: translate(100%, -50%);
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3da35d;
+}
+#demo {
+  font-family: Hacking;
+  font-size: 18px;
+  color: #0a7c2b;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 500px) {
+  .text {
+    height: 2vh;
+    width: auto;
+  }
+  .text p{
+    font-size: 5.6vw;
+  }
+  .container{
+    /* width: 100vw; */
+    padding: 25px;
+    margin: 50px 50px;
+  }
+  input{
+    width: 40vw;
+    text-overflow: ellipsis;
+  }
+  #demo{
+    font-size: 10px;
+  }
+}
