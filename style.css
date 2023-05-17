@@ -22,6 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .text {
   display: flex;
   flex-direction: row;
@@ -35,6 +36,13 @@ body {
 }
 .text p {
   font-size: 7.6vw;
+}
+.megacontainer{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .container {
   display: flex;
@@ -155,8 +163,7 @@ input::placeholder {
     font-size: 5.6vw;
   }
   .container{
-    /* width: 100vw; */
-    padding: 25px;
+    padding: 15px;
     margin: 50px 50px;
   }
   input{

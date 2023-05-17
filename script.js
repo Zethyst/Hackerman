@@ -11,7 +11,7 @@ pwd.addEventListener("click", () => {
     let t = document.getElementsByClassName("userbox")[0];
     t.style.display = "none";
     let c = document.getElementsByClassName("container")[0];
-    c.style.width = "80vw";
+    // c.style.width = "65vw";
     c.style.height = "55vh";
     var x = document.getElementById("user").value;
 
