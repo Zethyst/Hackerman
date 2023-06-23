@@ -42,8 +42,13 @@ pwd.addEventListener("click", () => {
     });
     let p6 = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("Connected.");
+            resolve("Connected. Resetting passwords...");
         }, 16000);
+    });
+    let p7 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Hacking status: Hacked! Successfully -_+");
+        }, 20000);
     });
     p1.then((value) => {
         document.getElementById("demo").innerHTML = value;
@@ -66,6 +71,10 @@ pwd.addEventListener("click", () => {
         document.getElementById("demo").innerHTML = temp + "<br><br>" + value;
     });
     p6.then((value) => {
+        let temp = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = temp + "<br><br>" + value;
+    });
+    p7.then((value) => {
         let temp = document.getElementById("demo").innerHTML;
         document.getElementById("demo").innerHTML = temp + "<br><br>" + value;
     });
