@@ -8,7 +8,7 @@ With Hackerman, the process is simple yet captivating. Enter a username of your 
 Hackerman is more than just a password generator. It's an homage to the iconic aesthetics of hacking culture, where the combination of black and green creates an electrifying ambiance that fuels your imagination. With every keystroke, you're transported deeper into a world where technology and creativity converge.
 
 Get ready to enter the matrix. Hackerman awaits your command.</p>
-[Visit Now](https://score-sense-zethyst.vercel.app/) 🚀
+[Visit Now](zethsyt-hackit.netlify.app/) 🚀
 
 ## 🖥️ Tech Stack
 **Frontend:**
